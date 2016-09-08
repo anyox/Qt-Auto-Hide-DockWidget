@@ -20,6 +20,7 @@ enum class DockWidgetState
 	Closed = 3,    //! DockWidget is closed by button X
 };
 
+
 /*! Auto Hide dockwidget
 */
 class NXDockWidget : public QDockWidget
