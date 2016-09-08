@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NXMainWindow</class>
+ <widget class="QMainWindow" name="NXMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockTest</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>616</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFile"/>
+   <addaction name="actionEdit_File"/>
+   <addaction name="actionAdd_File"/>
+   <addaction name="actionDelete_File"/>
+   <addaction name="actionImage_File"/>
+   <addaction name="actionView_File"/>
+  </widget>
+  <action name="actionFile">
+   <property name="icon">
+    <iconset resource="nxmainwindow.qrc">
+     <normaloff>:/Dock/Resources/File.png</normaloff>
+     <normalon>:/DockTest/Resources/File.png</normalon>:/Dock/Resources/File.png</iconset>
+   </property>
+   <property name="text">
+    <string>File</string>
+   </property>
+   <property name="toolTip">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionEdit_File">
+   <property name="icon">
+    <iconset>
+     <normalon>:/Dock/Resources/Edit_File.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Edit File</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit File</string>
+   </property>
+  </action>
+  <action name="actionAdd_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Dock/Resources/Add File.png</normaloff>
+     <normalon>:/Dock/Resources/Add_File.png</normalon>:/Dock/Resources/Add File.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add File</string>
+   </property>
+   <property name="toolTip">
+    <string>Add File</string>
+   </property>
+  </action>
+  <action name="actionDelete_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/DockTest/Resources/Delete File.png</normaloff>
+     <normalon>:/Dock/Resources/Delete_File.png</normalon>:/DockTest/Resources/Delete File.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete File</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete File</string>
+   </property>
+  </action>
+  <action name="actionImage_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/DockTest/Resources/Image File.png</normaloff>
+     <normalon>:/Dock/Resources/Image_File.png</normalon>:/DockTest/Resources/Image File.png</iconset>
+   </property>
+   <property name="text">
+    <string>Image File</string>
+   </property>
+   <property name="toolTip">
+    <string>Image File</string>
+   </property>
+  </action>
+  <action name="actionView_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/DockTest/Resources/View File.png</normaloff>
+     <normalon>:/Dock/Resources/View_File.png</normalon>:/DockTest/Resources/View File.png</iconset>
+   </property>
+   <property name="text">
+    <string>View File</string>
+   </property>
+   <property name="toolTip">
+    <string>View File</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="nxmainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
